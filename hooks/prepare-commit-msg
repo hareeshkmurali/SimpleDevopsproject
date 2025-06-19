@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Call the forbidden merge checker script
+bash "$(git rev-parse --show-toplevel)/scripts/prevent-forbidden-merges.sh" "$@"
+
